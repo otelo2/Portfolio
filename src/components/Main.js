@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/pic01.jpg'
 import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import pic03 from '../images/pic03.png'
 
 class Main extends React.Component {
   render() {
@@ -22,22 +22,23 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="blog"
+          className={`${this.props.article === 'blog' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">Blog</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            I have a Blog where I share the process behind projects I've worked
+            on or general things that I've found interesting and want to talk
+            about. It is more of a resource for me to quickly find the steps
+            to repeat something I've done before, but I figured it may be helpful
+            to someone, so if you're interested check out 
+            <a href="https://blog.antoniosolismz.com/"> my blog</a>.
           </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -96,13 +97,21 @@ class Main extends React.Component {
             <img src={pic03} alt="" />
           </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+            I am a mexican Computer Systems Engineer with a passion for cybersecurity and
+            technology in general. 
+          </p>
+          <p>
+            My favorite programming language is Python, but
+            I've used Java, C, JavaScript, etc. I'd say my biggest skill for programming
+            is being able to quickly pick up a language I've never used before. 
+          </p>
+          <p>
+            As for cybersecurity, I've had experience with platforms like HackTheBox and
+            TryHackMe, with the latter being ranked in the top 2% of the world.
+          </p>
+          <p>
+            I am currently looking for opportunities to relocate to Canada and start my 
+            career in the tech industry!
           </p>
           {close}
         </article>
@@ -115,7 +124,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Contact</h2>
-          <form method="post" action="#">
+          <form method="post" action="mailto:antonio.solismz@outlook.com">
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
@@ -140,27 +149,23 @@ class Main extends React.Component {
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
-              >
+                href="https://twitter.com/antoniosolismz" className="icon fa-twitter">
                 <span className="label">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
+              <a href="https://www.linkedin.com/in/jos%C3%A9-antonio-sol%C3%ADs-mart%C3%ADnez-07b4a8192/" className="icon fa-linkedin">
+                <span className="label">LinkedIn</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
+              <a href="mailto:antonio.solismz@outlook.com" className="icon fa-envelope">
+                <span className="label">Email</span>
               </a>
             </li>
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
-                className="icon fa-github"
-              >
+                href="https://github.com/otelo2/" className="icon fa-github">
                 <span className="label">GitHub</span>
               </a>
             </li>

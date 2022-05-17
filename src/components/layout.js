@@ -39,10 +39,10 @@ const Layout = ({ children, location }) => {
       render={data => (
         <>
           <Helmet
-            title={data.site.siteMetadata.title}
+            title="Antonio Solís's Portfolio"
             meta={[
-              { name: 'description', content: 'Sample' },
-              { name: 'keywords', content: 'sample, something' },
+              { name: 'description', content: 'Portfolio of José Antonio Solís Martínez a Computer Systems Engineer interested in cybersecurity and programming.' },
+              { name: 'keywords', content: 'portfolio, cybersecurity, security, backend, programming, coding, UDLAP, México' },
             ]}
           >
             <html lang="en" />
