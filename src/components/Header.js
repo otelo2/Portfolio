@@ -13,7 +13,7 @@ const Header = props => (
           Computer Systems Engineer from {' '}
           <a href="https://www.udlap.mx/web/">UDLAP</a> interested in
           <br />
-          cybersecurity or backend programming roles.
+          &nbsp;cybersecurity or backend programming roles.&nbsp;
         </p>
       </div>
     </div>
