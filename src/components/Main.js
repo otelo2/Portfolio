@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
+import blogMain from '../images/blogMain.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.png'
 
@@ -30,7 +30,7 @@ class Main extends React.Component {
         >
           <h2 className="major">Blog</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <a href='https://blog.antoniosolismz.com/' target="_blank" rel="noreferrer"> <img src={blogMain} alt="Main screen of the blog" /> </a>  
           </span>
           <p>
             I have a Blog where I share the process behind projects I've worked
@@ -38,37 +38,37 @@ class Main extends React.Component {
             about. It is more of a resource for me to quickly find the steps
             to repeat something I've done before, but I figured it may be helpful
             to someone, so if you're interested check out 
-            <a href="https://blog.antoniosolismz.com/"> my blog</a>.
+            <a href="https://blog.antoniosolismz.com/" target="_blank" rel="noreferrer"> my blog</a>.
           </p>
           {close}
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="projects"
+          className={`${this.props.article === 'projects' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Projects</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <a href='https://blog.antoniosolismz.com/' target="_blank" rel="noreferrer"> <img src={pic02} alt="" /> </a> 
           </span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
-          <p>
-            Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
-          </p>
+          <h3> Under construction. </h3>
+          <p>Text description of the project</p>
+
+          <h3> Discord bot: Rapsta Bot. </h3>
+          <p>Text description of the project</p>
+
+          <h3> Me Too Browser. </h3>
+          <p>Text description of the project</p>
+
+          <h3> Pong game. </h3>
+          <p>Text description of the project</p>
+
+          <h3> Annoying clip tuber </h3>
+          <p>Text description of the project</p>
+            
           {close}
         </article>
 
