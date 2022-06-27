@@ -3,6 +3,11 @@ import React from 'react'
 import blogMain from '../images/blogMain.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.png'
+import rapstaBot from '../images/rapsta-bot.png'
+import meToo from '../images/me-too.png'
+import pong1 from '../images/pong1.png'
+import pong2 from '../images/pong2.png'
+import cliptuber from '../images/cliptuber.png'
 
 class Main extends React.Component {
   render() {
@@ -51,23 +56,57 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Projects</h2>
-          <span className="image main">
-            <a href='https://blog.antoniosolismz.com/' target="_blank" rel="noreferrer"> <img src={pic02} alt="" /> </a> 
-          </span>
-          <h3> Under construction. </h3>
-          <p>Text description of the project</p>
 
           <h3> Discord bot: Rapsta Bot. </h3>
-          <p>Text description of the project</p>
+          <span className="image main">
+            <a href='https://github.com/otelo2/Rapsta-Bot' target="blank" rel="noreferrer"> <img src={rapstaBot} alt="Rapsta bot" /> </a>  
+          </span>
+          <img width="10%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+          <img width="10%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg" />
+          <img width="10%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" />
+          <p>JavaScript Discord bot using Discord.js for the server with my friends. Hosted using Heroku and implemented a connection to a PostgreSQL database to store birthdays.</p>
 
           <h3> Me Too Browser. </h3>
-          <p>Text description of the project</p>
+          <span className="image main">
+            <a href='https://github.com/otelo2/MeTooTlaxcala' target="blank" rel="noreferrer"> <img src={meToo} alt="Me Too" /> </a>  
+          </span>
+          <img width="10%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain-wordmark.svg" />
+          <img width="10%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" />
+          <img width="10%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+          <img width="10%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+          <img width="10%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-plain.svg" />
+          <p>Checks the Me Too Twitter page of my state to find new tweets, save them to a database (PostgreSQL), and adding it to a JSON file so they can be looked up using a web frontend.
+             I made it so people can easily check if someone has been reported as an abuser without having to go to the Twitter page, and as a backup if it were taken down.
+             The code is honestly super convoluted as my goal was to have it work automatically with little human intervention. Not my best but probably the biggest project scope wise.
+          </p>
 
           <h3> Pong game. </h3>
-          <p>Text description of the project</p>
+          <span className="image main">
+            <a href='https://github.com/otelo2/Custom-Pong' target="blank" rel="noreferrer"> <img src={pong1} alt="Pong 1" /> </a>  
+            <a href='https://github.com/otelo2/Custom-Pong' target="blank" rel="noreferrer"> <img src={pong2} alt="Pong 2" /> </a>  
+          </span>
+          <img width="10%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-plain-wordmark.svg" />
+          <p>Written in Love2D. A modification of the pong tutorial by Colton Ogden for my video games lab course. I added some basic logic so you could play against the computer and another player
+            (original project was only against other players).
+          </p>
 
           <h3> Annoying clip tuber </h3>
-          <p>Text description of the project</p>
+          <span className="image main">
+            <a href='https://github.com/otelo2/Annoying-Clip-Tuber' target="blank" rel="noreferrer"> <img src={cliptuber} alt="Cliptuber" /> </a>  
+          </span>
+          <img width="10%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain-wordmark.svg" />
+          
+          <img width="10%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" />
+          
+          <p>For a while there was a surge of YouTube channels that just were downloading Twitch clips of popular streamers, uploading them to YouTube, and getting a ton of views.
+            Using selenium webdriver to automate the retrieval of clip links (so I woudn't need to use an API) this program automatically downloads clips in parallel from specified streamers.
+            Downloading the clips in parallel was groundbreaking in terms of speed and efficiency. 
+          </p>
+          <p>No screenshots of the execution because Twitch updated their site (so the automatic browser is broken)</p>
+          <p>I really like automation tho. This was a very fun project.</p>
+
+          <h3> And some more </h3>
+          <p>I've done some other projects that I feel like don't deserve to be here, but you can check them out in <a href="https://github.com/otelo2?tab=repositories" > my GitHub.</a></p>
             
           {close}
         </article>
